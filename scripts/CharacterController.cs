@@ -3,11 +3,11 @@ using System.Collections;
 
 public class CharacterController : MonoBehaviour {
 
-    float maxSpeed = 8;
+    float maxSpeed = 8f;
     bool facingRight = true;
 
     string jump = "Fire1";
-    float jumpSpeed = 10;
+    float jumpSpeed = 25f;
     bool jumping = true;
 
 	// Use this for initialization
