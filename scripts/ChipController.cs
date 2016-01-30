@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterController : MonoBehaviour {
+public class 
+    ChipController : MonoBehaviour {
 
     float maxSpeed = 8f;
     bool facingRight = true;
@@ -11,10 +12,12 @@ public class CharacterController : MonoBehaviour {
     bool jumping = true;
 
     Rigidbody2D physics;
+    Animator animator;
 
     // Use this for initialization
     void Start () {
         physics = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void OnCollisionEnter2D(Collision2D other) {
@@ -40,8 +43,9 @@ public class CharacterController : MonoBehaviour {
 
         physics.velocity = new Vector2(x_vel, y_vel);
 
-        Animator animator = GetComponent<Animator>();
+        
         animator.SetFloat("speed", System.Math.Abs(x_vel));
+        animator.SetBool("jumping", jumping);
 
         if (move > 0 && !facingRight)
             Flip();
