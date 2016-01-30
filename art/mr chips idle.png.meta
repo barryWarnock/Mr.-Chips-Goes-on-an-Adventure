@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: dc6997e9e0f8b6d4e9365d7a00523cd2
-timeCreated: 1454137211
+guid: 7165180fc8142f24eb7d8f53712c062a
+timeCreated: 1454136937
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: mr chip jumping_0
+  fileIDToRecycleName: {}
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -50,17 +49,7 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: mr chip jumping_0
-      rect:
-        serializedVersion: 2
-        x: 297
-        y: 292
-        width: 328
-        height: 534
-      alignment: 1
-      pivot: {x: 0, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
