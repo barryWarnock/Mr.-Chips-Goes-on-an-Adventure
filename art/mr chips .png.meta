@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: d04c59c954fcac54f8ee98621fdacff2
-timeCreated: 1454128233
+guid: 37f54f48890d7754687c26c4b314fb6e
+timeCreated: 1454134949
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: mr chips md_0
-    21300002: mr chips md_1
-    21300004: mr chips md_2
-    21300006: mr chips md_3
-    21300008: mr chips md_4
+    21300000: mr chips _0
+    21300002: mr chips _1
+    21300004: mr chips _2
+    21300006: mr chips _3
+    21300008: mr chips _4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,55 +55,55 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: mr chips md_0
+    - name: mr chips _0
       rect:
         serializedVersion: 2
         x: 40
         y: 351
         width: 213
         height: 582
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mr chips md_1
+    - name: mr chips _1
       rect:
         serializedVersion: 2
         x: 267
         y: 351
-        width: 251
+        width: 238
         height: 582
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mr chips md_2
+    - name: mr chips _2
       rect:
         serializedVersion: 2
         x: 536
-        y: 351
+        y: 402
         width: 247
-        height: 582
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 532
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mr chips md_3
+    - name: mr chips _3
       rect:
         serializedVersion: 2
         x: 822
-        y: 351
+        y: 363
         width: 213
-        height: 582
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 570
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: mr chips md_4
+    - name: mr chips _4
       rect:
         serializedVersion: 2
         x: 1085
         y: 414
         width: 278
         height: 520
-      alignment: 0
-      pivot: {x: .5, y: .5}
+      alignment: 1
+      pivot: {x: 0, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

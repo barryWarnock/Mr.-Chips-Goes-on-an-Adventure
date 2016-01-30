@@ -7,26 +7,32 @@ public class CharacterController : MonoBehaviour {
     bool facingRight = true;
 
     string jump = "Fire1";
-    float jumpSpeed = 25f;
+    float jumpSpeed = 19f;
     bool jumping = true;
 
-	// Use this for initialization
-	void Start () {
-	}
+    Rigidbody2D physics;
+
+    // Use this for initialization
+    void Start () {
+        physics = GetComponent<Rigidbody2D>();
+    }
 
     void OnCollisionEnter2D(Collision2D other) {
-        if (other.gameObject.tag == "floor")
+        if (other.gameObject.tag == "floor" && physics.velocity.y <= 0)
             jumping = false;
     }
 
 	// Update is called once per frame
 	void FixedUpdate () {
         float move = Input.GetAxis("Horizontal");
-        Rigidbody2D physics = GetComponent<Rigidbody2D>();
         float x_vel = (jumping) ? (move * maxSpeed) : (move * maxSpeed);// no control mid-air
         float y_vel = physics.velocity.y;
 
-        if (Input.GetButtonDown(jump) && jumping == false)
+        //determine if falling
+        if (y_vel < 0)
+            jumping = true;
+
+        if (Input.GetButtonDown(jump) && !jumping)
         {
             y_vel = jumpSpeed;
             jumping = true;
